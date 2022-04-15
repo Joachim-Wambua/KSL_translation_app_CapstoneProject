@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Template Mo">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+    <title>Kenyan Sign Language Translation System</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Vendor CSS Files -->
+    
+    <link href="{{ url_for ( 'static', filename = 'css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for ( 'static', filename = 'css/font-awesome.css') }}" rel="stylesheet">
+    <link href="{{ url_for ( 'static', filename = 'css/templatemo-art-factory.css') }}" rel="stylesheet">
+    <link href="{{ url_for ( 'static', filename = 'css/owl-carousel.css') }}" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link ... href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+
+  <body>
+      <!-- ***** Header Area Start ***** -->
+      <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="#" class="logo">KSL Translation App</a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#welcome" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about">About</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Welcome Area Start ***** -->
+    <div class="welcome-area" id="welcome">
+
+        <!-- ***** Header Text Start ***** -->
+        <div class="header-text">
+            <div class="container">
+                <div class="row">
+                    <div class="left-text col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                        <h1><strong>Kenyan Sign Language Translation App</strong></h1>
+                        <h5 class="text-white pt-0">by Rubix</h5>
+                        <p>This web application provides a visual assistive communication service that utilises a pre-trained deep learning model that translates Kenyan Sign Language to their corresponding words.</p>
+                        <a href="#translate" class="main-button-slider"><strong>GET STARTED</strong></a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                        <img src="{{url_for('static', filename = 'images/3d_hands.png')}}" class="rounded img-fluid d-block mx-auto" alt="First Vector Graphic">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Header Text End ***** -->
+    </div>
+    <!-- ***** Welcome Area End ***** -->
+
+    <main id="main">
+      <section class="section" id="translate">
+        <div class="text-center p-5">
+          <h2>Kenyan Sign Language Translation</h2><br>
+          <img id="bg" src="{{ url_for('video_feed') }}">
+        </div>
+    </section>
+    </main>
+
+
+    <!-- ***** About Section Start ***** -->
+    <section class="section" id="about">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-7 col-md-12 col-sm-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                  <img src="{{url_for('static', filename='images/about.png')}}" class="rounded img-fluid d-block mx-auto" alt="App">
+              </div>
+              <div class="right-text col-lg-5 col-md-12 col-sm-12 mobile-top-fix">
+                  <div class="left-heading pt-5 pb-5 ">
+                      <h2>About</h2>
+                  </div>
+                  <div class="left-text">
+                      <p>This web application was created with the intention of revolutionising sign language communication for the fourth industrial revolution. This application uses a machine(deep) learning model to analyse video sequences and convert them to their corresponding word meanings.<br><br>
+                      This application is designed for persons with hearing & speech impairments and their guardians/partners as it aims to assist them in day to day communication & interactions.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="hr"></div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- ***** About Section End ***** -->
+
+
+    <!-- ***** Footer Start ***** -->
+  <footer class="panel-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-12 col-sm-12">
+                <p class="copyright">Copyright &copy; 2022 Rubix Technologies</p>
+            </div>
+        </div>
+      </div>
+  </footer>
+  
+        <!-- Vendor JS Files -->
+      <script src="{{url_for ( 'static', filename = 'js/jquery-2.1.0.min.js') }}"></script>
+      <script src="{{url_for ( 'static', filename = 'js/popper.js') }}"></script>
+      <script src="{{url_for ( 'static', filename = 'js/bootstrap.min.js') }}"></script>
+
+
+      <script src="{{url_for ( 'static', filename = 'js/owl-carousel.js') }}"></script>
+      <script src="{{url_for ( 'static', filename = 'js/scrollreveal.min.js') }}"></script>
+      <script src="{{url_for ( 'static', filename = 'js/waypoints.min.js') }}"></script>
+     
+     
+      <script src="{{url_for ( 'static', filename = 'js/jquery.counterup.min.js') }}"></script>
+      <script src="{{url_for ( 'static', filename = 'js/imgfix.min.js') }}"></script>
+
+
+
+      <!-- Template Main JS File -->
+      <script src="{{url_for ( 'static', filename = 'js/main.js') }}"></script>
+  </body>
+</html>
