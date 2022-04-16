@@ -6,6 +6,7 @@ from functions import *
 from keras.models import load_model
 import time
 import mediapipe as mp
+import cv2
 
 
 # Importing the model
