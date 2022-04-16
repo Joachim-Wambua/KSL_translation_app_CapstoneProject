@@ -8,4 +8,4 @@ tensorflow-cpu==2.7.0
 tensorflow-estimator==2.7.0
 tensorflow-io-gcs-filesystem==0.22.0
 opencv-python-headless==4.5.4.60
-Flask==2.0.2s
+Flask==2.0.2
